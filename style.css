@@ -1,0 +1,298 @@
+/* COLOR PALETTE
+Header #222831
+Titles #00ADB5
+Details #00686d
+*/
+/* General */
+body {
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+  font-size: 20px;
+}
+
+.container {
+  margin: 0px 12%;
+  padding: 50px 0;
+}
+
+h3 {
+  font-size: 50px;
+  font-weight: 700;
+  font-family: "DM Serif Display", serif;
+  margin: 10px 0 30px;
+  color: #00adb5;
+}
+
+h4 {
+  font-weight: 400;
+  color: #222831;
+  margin-bottom: 10px;
+  font-size: 26px;
+}
+
+/* Header */
+header {
+  padding: 130px;
+  background-color: #222831;
+  color: white;
+}
+
+h1 {
+  font-size: 100px;
+  font-weight: 900;
+  margin-bottom: 0;
+  font-family: "DM Serif Display", serif;
+}
+
+h2 {
+  font-size: 50px;
+  font-weight: 200;
+  margin-top: 5px;
+}
+
+/* About Me */
+
+#about {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  padding-top: 100px;
+  margin-bottom: 30px;
+}
+
+#about > div {
+  font-size: 22px;
+  flex-basis: 800px;
+}
+
+#about span {
+  color: #00adb5;
+}
+
+.profile-picture {
+  border-radius: 50%;
+  width: 400px;
+  height: max-content;
+  object-fit: cover;
+  filter: grayscale(1);
+}
+
+/* Skills */
+.personal-interests h4,
+.skills h4 {
+  background-image: linear-gradient(to right, #00adb5, #00686d);
+  border-radius: 20px;
+  color: white;
+  padding: 5px 20px;
+}
+.skills ul,
+.personal-interests ul {
+  list-style: none;
+  margin: 50px 0 100px;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+#skills li {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
+  flex-grow: 1;
+}
+
+.skills li {
+  flex-basis: 300px;
+  background-color: #222831;
+  color: white;
+  border-radius: 20px;
+  height: 70px;
+}
+
+.personal-interests li {
+  flex-basis: 200px;
+  height: 200px;
+  border: solid 1.5px #222831;
+  color: #222831;
+  border-radius: 25px;
+}
+.personal-interests li img {
+  height: 50px;
+  margin-bottom: 20px;
+}
+/* Education */
+/* Work Experience */
+
+#education,
+#work-experience {
+  background-color: #00adb5;
+  display: flex;
+}
+#education {
+  background-image: url(./assets/images/bg1.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: top right;
+}
+
+#work-experience {
+  text-align: right;
+  background-image: url(./assets/images/bg2.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: bottom left;
+  justify-content: flex-end;
+}
+
+#education h3,
+#work-experience h3 {
+  color: white;
+}
+
+.item {
+  padding: 20px 50px;
+  border-radius: 20px;
+  margin-bottom: 30px;
+  background-color: white;
+}
+
+#work-experience .items {
+  align-items: flex-end;
+}
+
+.item p {
+  margin: 7px;
+}
+
+.entity {
+  font-weight: 700;
+  font-size: 21px;
+  margin-bottom: 15px;
+}
+
+.course-job {
+  font-weight: 400;
+  font-size: 20px;
+  margin-bottom: 7px;
+}
+
+.dates {
+  color: #00adb5;
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 16px;
+}
+
+/* Contact Me */
+#contacts {
+  text-align: center;
+  margin: 0 35%;
+}
+
+#contacts > div {
+  padding: 50px 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+#contacts a {
+  text-decoration: none;
+  color: black;
+}
+
+.icon {
+  background-color: #00686d;
+  border-radius: 50%;
+  width: 70px;
+  height: 70px;
+}
+
+.icon:hover {
+  background-color: #222831;
+}
+
+.icon img {
+  height: 30px;
+  position: relative;
+  top: 20px;
+}
+/* Footer */
+
+footer {
+  background-color: #222831;
+  margin: 0;
+  color: white;
+  text-align: center;
+}
+
+/* Media Query */
+@media (max-width: 900px) {
+  #about {
+    flex-direction: column;
+  }
+
+  .profile-picture {
+    order: -1;
+    width: 300px;
+    margin-bottom: 50px;
+    align-self: flex-start;
+  }
+
+  h1 {
+    font-size: 80px;
+  }
+  h2 {
+    font-size: 36px;
+  }
+
+  h3 {
+    font-size: 32px;
+    margin-top: 20px;
+  }
+
+  h4 {
+    text-align: center;
+  }
+
+  header {
+    padding: 20px 0;
+  }
+  #about > div {
+    flex-basis: 300px;
+  }
+
+  .item {
+    flex-grow: 1;
+  }
+
+  #contacts {
+    margin: 0 20%;
+  }
+}
+
+/* Media Query */
+@media (max-width: 472px) {
+  h1 {
+    font-size: 50px;
+  }
+  h2 {
+    font-size: 30px;
+  }
+  header {
+    padding: 10px 0;
+  }
+
+  .icon {
+    width: 50px;
+    height: 50px;
+  }
+
+  .icon img {
+    height: 20px;
+    top: 15px;
+  }
+}
